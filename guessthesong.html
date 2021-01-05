@@ -2,14 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="styles/guessthesongstyles.css">
+    <script src="./script/guessthesongscript.js"></script>
+    <title>Guess The Song Counter</title>
+
   </head>
   <body>
 
-    <div id="Player 1">
-      <span>Spieler 1</span>
-      <span>12</span>
+    <div class="scorecard color1" id="1" onclick="add(id)">
+      <h1>Spieler 1: <span id="1 score">0</span> </h1>
     </div>
+
+    <div class="scorecard color2" id="2" onclick="add(id)">
+      <h1>Spieler 2: <span id="2 score">0</span> </h1>
+    </div>
+
+    <div class="scorecard color3" id="3" onclick="add(id)">
+      <h1>Spieler 3: <span id="3 score">0</span> </h1>
+    </div>
+
+    <div class="scorecard colorEmpty" id="addbutton" onclick="newPlayer()">
+      <h1>Hinzufügen</h1>
+    </div>
+
+
 
   </body>
 </html>

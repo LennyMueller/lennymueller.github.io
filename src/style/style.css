@@ -69,3 +69,31 @@ section h1 {
 section p {
   font-size: 1.5rem;
 }
+
+table#cvtable {
+  text-align: left;
+}
+
+table#cvtable th, td {
+  padding: 1px;
+}
+
+table#cvtable td.timeframe {
+  color: #969696;
+  font-size: small;
+}
+
+table#cvtable td.company, table#cvtable td.company a {
+  color: #c2c2c2;
+  text-decoration: none;
+}
+
+table#cvtable td.company a:hover {
+  text-decoration: underline;
+  color: skyblue; 
+}
+
+table#cvtable td.company span {
+  font-size: small;
+  color: #919191;
+}

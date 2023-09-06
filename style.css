@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*https://github.com/LennyMueller/CSS-Grid-Test*/
+
+#container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns:100px 1fr 1fr 1fr;
+  grid-template-rows:100px 1fr 1fr 100px;
+  grid-template-areas:
+    "sidebar nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "footer footer footer footer"
+}
+
+@media only screen and (max-width:600px) {
+  div#container {
+    grid-template-columns:1fr;
+    grid-template-rows:50px 50px 2.5fr 1fr 1fr 1fr 50px;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer"
+  }
+
+  nav {
+    grid-area: nav;
+    background-color: red !important;
+  }
+}
+
+
+
+/*
+#fff2df;
+#d9ad7c;
+#a2836e;
+#f4a688;
+#e0876a;
+#f9ccac;
+#674d3c;
+*/
+
+nav {
+  grid-area: nav;
+  background-color: white;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #fff2df;
+}
+
+header {
+  grid-area: header;
+  background-color:#d9ad7c;
+}
+
+main {
+  grid-area: main;
+  background-color:#a2836e;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png");
+  background-repeat:no-repeat;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color:#f4a688;
+}
+
+#content1 {
+  grid-area: content1;
+  background-color:#e0876a;
+}
+
+#content2 {
+  grid-area: content2;
+  background-color:#f9ccac;
+}
+
+#content3 {
+  grid-area: content3;
+  background-color:#674d3c;
+}
